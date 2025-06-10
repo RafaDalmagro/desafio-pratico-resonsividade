@@ -1,0 +1,41 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 2rem;
+
+    #info {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        width: 37rem;
+
+        h1 {
+            color: var(--text-color-p);
+        }
+
+        &>div {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            font: var(--p-md);
+        }
+    }
+
+    #links {
+        display: flex;
+        flex-direction: column;
+        width: 10.5rem;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            li {
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+            }
+        }
+    }
+}
