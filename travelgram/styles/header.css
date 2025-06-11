@@ -3,6 +3,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-block: 2rem;
+    background-color: var(--surface-color);
 
     #info {
         display: flex;
@@ -20,6 +21,9 @@ header {
             gap: .5rem;
             font: var(--p-md);
         }
+        img{
+            border-radius: 999rem;
+        }
     }
 
     #links {
@@ -36,6 +40,31 @@ header {
                 align-items: center;
                 gap: .5rem;
             }
+        }
+    }
+}
+
+@media (width < 80rem) {
+    header{
+        flex-direction: column;
+        gap:2rem;
+        #info{
+            flex-direction: column;
+            width: 18.5rem;
+
+            p{
+                font-size: .875rem;
+                line-height: 1.7;
+            }
+
+            img{
+                align-self: flex-start;
+                width: 7.5rem;
+            }
+        }
+
+        #links{
+            align-self: flex-start;
         }
     }
 }

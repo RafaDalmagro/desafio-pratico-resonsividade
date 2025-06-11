@@ -4,9 +4,11 @@ nav {
     align-items: center;
     padding-block: 1.25rem;
     font: 400 1rem/150% var(--ff);
+    background-color: var(--surface-color);
 
     img[src*="Logo"] {
         height: 2rem;
+        background-color: inherit;
     }
 
     ul {
@@ -23,9 +25,13 @@ nav {
         }
     }
 
-
     & ul li:last-child img {
         height: 2.5rem;
         width: 2.5rem;
+        border-radius: 999rem;
     }
+}
+
+@media (width < 80rem){
+
 }
