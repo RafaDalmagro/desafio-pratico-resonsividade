@@ -33,6 +33,7 @@ html {
 body {
     background-color: var(--bg-color);
     width: 22.5rem;
+    padding-bottom: 2.5rem;
 }
 
 ul,

@@ -1,0 +1,205 @@
+#news {
+    padding-inline: 1rem;
+    display: grid;
+    gap: 2rem;
+    padding-bottom: 1rem;
+    & #ia {
+        display: grid;
+        gap: 1.5rem;
+
+        & header {
+            border-top: 1px solid var(--stroke-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: .75rem;
+
+            & strong {
+                font: var(--fs-span);
+            }
+
+            & a {
+                display: flex;
+                align-items: center;
+                gap: .25rem;
+
+                span {
+                    background-image: url(../assets/icons/ArrowRight.svg);
+                    width: 16px;
+                    height: 16px;
+                }
+
+                &:hover span {
+                    background-image: url(../assets/icons/ArrowRightHover.svg);
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+
+        & .cards {
+            display: grid;
+            gap: 2rem;
+
+            .card {
+                display: flex;
+                flex-direction: row-reverse;
+                gap: 1rem;
+
+                img {
+                    width: 5rem;
+                    object-fit: contain;
+                    aspect-ratio: 1/1;
+                    align-self: flex-start;
+                }
+
+
+                .content {
+                    display: grid;
+                    gap: .5rem;
+
+                    div {
+                        display: grid;
+                        gap: .25rem;
+
+                        h2 {
+                            font: var(--fs-h2);
+                            height: 2.75rem;
+                            overflow-y: hidden;
+                        }
+
+                        p {
+                            height: 5.5rem;
+                            overflow-y: hidden;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    aside {
+        display: grid;
+        gap: 2rem;
+
+        & img[src*="Ads"] {
+            width: 100%;
+            object-fit: contain;
+            border-radius: .25rem;
+        }
+
+        #novidades {
+            display: grid;
+            gap: 1.5rem;
+            & header {
+                border-top: 1px solid var(--stroke-color);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: .75rem;
+
+                & strong {
+                    font: var(--fs-span);
+                }
+
+                & a {
+                    display: flex;
+                    align-items: center;
+                    gap: .25rem;
+
+                    span {
+                        background-image: url(../assets/icons/ArrowRight.svg);
+                        width: 16px;
+                        height: 16px;
+                    }
+
+                    &:hover span {
+                        background-image: url(../assets/icons/ArrowRightHover.svg);
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+
+            .cards {
+                display: grid;
+                gap: 2rem;
+                .card {
+                    display: flex;
+                    gap: 1rem;
+                    img {
+                        width: 4.5rem;
+                        object-fit: contain;
+                    }
+                    .content{
+                        display: grid;
+                        gap: .5rem;
+
+                        h3{
+                            height: 2.5rem;
+                            overflow-y: hidden;
+                            font: var(--fs-span);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (width >=80rem) {
+    #news {
+        padding-inline: 2rem;
+        display: grid;
+        grid-template-columns: 1.25fr 1fr;
+        gap: 2rem;
+        .content-tag{
+            height: 1.25rem;
+        }
+        & #ia {
+            display: grid;
+            gap: 1.5rem;
+
+            & .cards {
+                display: grid;
+
+                .card {
+                    display: flex;
+                    flex-direction: row;
+                    img {
+                        width: 11rem;
+                    }
+                    .content{
+                        padding-block: .375rem;
+                        h2{
+                            font: var(--fs-h2);
+                            height: 2.75rem;
+                            overflow-y: hidden;
+                        }
+                        p{
+                            font: var(--fs-p);
+                            height: 5.5rem;
+                            overflow-y: hidden;
+                        }
+                    }
+                }
+            }
+        }
+
+        aside {
+            & img[src*="Ads"] {
+                width: 100%;
+                object-fit: contain;
+            }
+
+            .cards {
+                .card {
+                    img {
+                        width: 4.5rem;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+    }
+}

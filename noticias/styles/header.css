@@ -41,7 +41,11 @@ header {
 
 @media (width >=80rem) {
     header {
+        #primary{
+            padding-inline: 2rem;
+        }
         #secondary {
+            padding-inline: 2rem;
             justify-content: center;
 
             ul {

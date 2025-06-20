@@ -67,6 +67,7 @@
 
 @media (width >=80rem) {
     #mais-lidas {
+        padding-inline: 2rem;
         #cards {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;

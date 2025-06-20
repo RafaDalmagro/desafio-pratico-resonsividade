@@ -3,3 +3,11 @@ main{
     flex-direction: column;
     gap: 2rem;
 }
+
+@media (width >=80rem) {
+    main{
+        margin-top: 2.5rem;
+        gap: 5rem;
+        padding-top: 0;
+    }
+}
