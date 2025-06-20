@@ -1,23 +1,28 @@
-header{
+header {
     overflow: hidden;
     font: var(--fs-span);
-    strong{
+
+    strong {
         font: 500 1rem/145% var(--ff);
     }
-    #primary{
+    img[src*="Logo"]{
+        width: 6.25rem;
+    }
+    & #primary {
         display: flex;
         padding-block: 1rem;
         align-items: center;
         justify-content: space-between;
 
-        div{
+        div {
             display: flex;
             align-items: center;
             gap: .5rem;
         }
     }
 
-    #secondary{
+    & #secondary {
+        color: var(--text-color-secondary);
         font: 500 .875rem/145% var(--ff);
         border-block: 1px solid var(--stroke-color);
         display: flex;
@@ -26,7 +31,7 @@ header{
         height: 3rem;
         width: 80rem;
 
-        ul{
+        ul {
             display: flex;
             gap: 2rem;
             align-items: center;
@@ -34,11 +39,12 @@ header{
     }
 }
 
-@media (width >= 80rem) {
-    header{
-        #secondary{
+@media (width >=80rem) {
+    header {
+        #secondary {
             justify-content: center;
-            ul{
+
+            ul {
                 justify-content: space-between;
                 width: 100%;
                 gap: 0;
