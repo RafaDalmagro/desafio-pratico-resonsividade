@@ -1,8 +1,11 @@
-#info {
+#info, #adress, #responsable{
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
+}
 
+
+#info {
     .droparea-wrapper {
         .droparea {
             padding: 1.75rem;

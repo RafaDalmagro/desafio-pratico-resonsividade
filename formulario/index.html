@@ -95,6 +95,72 @@
                     </div>
                 </div>
             </div>
+            <div id="adress">
+                <h2>Endereço residencial</h2>
+                <div class="input-wrapper">
+                    <label for="cep">CEP</label>
+                    <input
+                        type="text"
+                        name="cep"
+                        id="cep"
+                        maxlength="9"
+                        placeholder="00000-000"
+                    />
+                </div>
+                <div class="input-wrapper">
+                    <label for="rua">Rua</label>
+                    <input
+                        type="text"
+                        name="rua"
+                        id="rua"
+                        disabled
+                        placeholder="Rua das Flores"
+                    />
+                </div>
+                <div class="input-wrapper">
+                    <label for="numero">Número</label>
+                    <input type="number" name="numero" id="numero" />
+                </div>
+                <div class="input-wrapper">
+                    <label for="city">Cidade</label>
+                    <input
+                        type="text"
+                        name="city"
+                        id="city"
+                        placeholder="São Paulo"
+                        disabled
+                    />
+                </div>
+                <div class="input-wrapper">
+                    <label for="uf">Estado</label>
+                    <input
+                        type="text"
+                        name="uf"
+                        id="uf"
+                        placeholder="SP"
+                        disabled
+                    />
+                </div>
+            </div>
+            <div id="responsable">
+                <h2>Informações do responsável</h2>
+                <div class="input-wrapper">
+                    <label for="name">Nome do responsável</label>
+                    <input type="text" name="name" id="name" placeholder=" " required>
+                    <span class="info">Principal responável legal e contato de emergência</span>
+                    <span class="error"><img src="assets/icons/alert-circle.svg" alt="Icone de alerta erro">Error message</span>
+                </div>
+                <div class="input-wrapper">
+                    <label for="tel">Telefone</label>
+                    <input type="tel" name="tel" id="tel" placeholder="(XX) X XXXX-XXXX">
+                    <span class="error"><img src="assets/icons/alert-circle.svg" alt="Icone de alerta erro">Error message</span>
+                </div>
+                <div class="input-wrapper">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+                    <span class="error"><img src="assets/icons/alert-circle.svg" alt="Icone de alerta erro">Error message</span>
+                </div>
+            </div>
         </form>
     </body>
 </html>

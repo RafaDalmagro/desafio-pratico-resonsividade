@@ -66,9 +66,14 @@ input {
     &:not(:placeholder-shown) {
         color: var(--text-primary);
     }
+
     &:not(:focus):invalid .erro {
         border: 1px solid var(--semantic-error);
         outline: 1px solid transparent;
+    }
+
+    &:disabled {
+        background-color: var(--surface-disabled);
     }
 }
 
@@ -79,4 +84,22 @@ input {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
+
+    & .error {
+        display: none;
+    }
+}
+
+.input-wrapper input:invalid:not(:focus) ~ .error {
+    display: flex;
+    gap: 0.25rem;
+    align-content: center;
+    
+    color: var(--semantic-error);
+    font: 400 .875rem/140% var(--ff);
+}
+
+.input-wrapper .info {
+    color: var(--text-secondary);
+    font: 400 .875rem/140% var(--ff);
 }
