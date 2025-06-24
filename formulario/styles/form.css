@@ -1,0 +1,33 @@
+form {
+    padding: 1.5rem;
+
+    header {
+        display: grid;
+        gap: 1.5rem;
+
+        & #action {
+            display: flex;
+            gap: 0.5rem;
+
+            font: 400 1rem/150% var(--ff);
+            img {
+                width: 1.5rem;
+            }
+
+            justify-self: flex-start;
+        }
+
+        & #title {
+            display: grid;
+            gap: 0.5rem;
+
+            h1 {
+                font: var(--font-h2);
+            }
+            p {
+                color: #57534e;
+                font: 400 1rem/150% var(--ff);
+            }
+        }
+    }
+}

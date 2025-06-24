@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     color: var(--text-primary);
+    font-family: var(--ff);
 }
 
 :root {
@@ -42,6 +43,13 @@ body {
     background-color: var(--surface-color);
 }
 
+label {
+    color: var(--text-secondary);
+    font: 400 0.875rem/140% var(--ff);
+}
+
+select,
+textarea,
 input {
     outline: 1px solid transparent;
     border: 1px solid var(--stroke-default);
@@ -52,7 +60,9 @@ input {
         border: 1px solid var(--stroke-highlight);
         outline: 1px solid var(--brand-light);
     }
+}
 
+input {
     &:not(:placeholder-shown) {
         color: var(--text-primary);
     }
@@ -60,4 +70,13 @@ input {
         border: 1px solid var(--semantic-error);
         outline: 1px solid transparent;
     }
+}
+
+.input-wrapper,
+.textarea-wrapper,
+.select-wrapper,
+.droparea-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
 }
