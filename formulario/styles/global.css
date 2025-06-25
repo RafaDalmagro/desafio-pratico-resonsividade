@@ -43,6 +43,10 @@ body {
     background-color: var(--surface-color);
 }
 
+h2{
+    font: 600 1rem/125% var(--ff);
+}
+
 label {
     color: var(--text-secondary);
     font: 400 0.875rem/140% var(--ff);
@@ -51,6 +55,8 @@ label {
 select,
 textarea,
 input {
+    width: 100%;
+    appearance: none;
     outline: 1px solid transparent;
     border: 1px solid var(--stroke-default);
     border-radius: 0.5rem;
