@@ -43,7 +43,22 @@ body {
     background-color: var(--surface-color);
 }
 
-h2{
+#app {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "form";
+}
+@media (width>=50rem) {
+    #app {
+        height: 100vh;
+        grid-template-columns: 51.25% 48.75%;
+        grid-template-areas: "form header";
+        overflow: hidden;
+    }
+}
+
+h2 {
     font: 600 1rem/125% var(--ff);
 }
 
@@ -100,21 +115,21 @@ input {
     display: flex;
     gap: 0.25rem;
     align-content: center;
-    
+
     color: var(--semantic-error);
-    font: 400 .875rem/140% var(--ff);
+    font: 400 0.875rem/140% var(--ff);
 }
 
 .input-wrapper .info {
     color: var(--text-secondary);
-    font: 400 .875rem/140% var(--ff);
+    font: 400 0.875rem/140% var(--ff);
 }
 
-button{
+button {
     appearance: none;
-    padding: .75rem 1.5rem;
+    padding: 0.75rem 1.5rem;
     text-align: center;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     border: 1px solid transparent;
     background-color: var(--brand-dark);
     outline: 2px solid transparent;

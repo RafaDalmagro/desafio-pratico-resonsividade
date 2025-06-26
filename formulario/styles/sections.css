@@ -6,6 +6,12 @@
     gap: 1.25rem;
 }
 
+@media (width >= 50rem){
+    #adress{
+        
+    }
+}
+
 #info {
     .droparea-wrapper {
         .droparea {

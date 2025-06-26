@@ -3,6 +3,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    grid-area: form;
     header {
         display: grid;
         gap: 1.5rem;
@@ -31,5 +32,12 @@ form {
                 font: 400 1rem/150% var(--ff);
             }
         }
+    }
+}
+
+@media (width >= 50rem){
+    form{
+        padding: 4.25rem;
+        overflow: auto;
     }
 }
