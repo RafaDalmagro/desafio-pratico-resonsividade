@@ -2,6 +2,11 @@
 
 Este projeto faz parte de um desafio prático cujo objetivo é transformar **layouts que ainda não são responsivos** em **layouts adaptáveis para diferentes tamanhos de tela**. O foco está em aplicar conceitos de **Mobile First**, **Media Queries** e **responsividade** com base em projetos previamente desenvolvidos em aula.
 
+# OBS: Para acessar os sites utilize os links abaixo:
+- https://rafadalmagro.github.io/desafio-pratico-resonsividade/noticias/
+- https://rafadalmagro.github.io/desafio-pratico-resonsividade/formulario
+- https://rafadalmagro.github.io/desafio-pratico-resonsividade/travelgram
+
 ## 🧾 Descrição do Desafio
 
 Trabalhar a partir de três projetos desktop disponibilizados durante as aulas, com duas possibilidades de abordagem:
